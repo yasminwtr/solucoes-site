@@ -298,6 +298,14 @@ input, textarea{
     }
 }
 
+@media screen and (max-width: 498px){
+    .responsive {
+        width: 70%;
+        justify-content: center;
+    }
+    
+}
+
 
 /* contact page */
 
