@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../geral/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../geral/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../geral/icofont/icofont.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex justify-content-start" href="../index.html">
+        <img src="../geral/imgs/logo.png" alt="Logo">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">
+                <span class="icofont-home"></span>
+                <span>INICIAL</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">
+                <span class="icofont-safety-hat-light"></span>
+                <span>SOBRE</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./service.html">
+                <span class="icofont-screw-driver"></span>
+                <span>SERVIÇOS</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">
+                <span class="icofont-phone"></span>
+                <span>CONTATO</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="service d-flex align-items-start justify-content-center">
+    <div class="containerService shadow-sm rounded">
+      <span class="icofont-water-drop icofont-3x" style="color: #d6702c;"></span>
+      <h4>Serviços de Hidráulica</h4>
+      <p>Nossos serviços de hidráulica incluem instalações, manutenções, trocas, reparos, desentupimentos e limpezas. Saiba todos eles clicando abaixo!</p>
+
+      <span id="space"></span>
+      <p id="hidra">- Consertos e instalações em pias, vasos sanitários, tanques, torneiras, engate flexível e caixas de gordura. 
+        - Troca e reparo de registros hidráulicos.
+        - Instalação de caixas d'água e cisternas, filtro de água, máquina de lavar roupa, máquina de lavar louça e projetos hidráulicos.
+        - Manutenção e conserto de sistema hidrossanitário.
+        - Limpeza de caixa d'água.
+        - Instalação e troca de torneiras simples, torneiras monocomando, sifão e ralos de pias, tanques, vaso descarga, válvula hidra e reparo caixa acoplada.
+        - Desentupimento de vasos sanitários, pias e ralos de chuveiros. 
+        - Execução e conserto de encanamento de água fria e água quente.</p>
+      <button onclick="showMoreHidra()" id="btnLer" class="slide">Saiba mais</button>
+    </div>
+
+    <div class="containerService shadow-sm rounded" style="margin-left: 5%;">
+      <span class="icofont-light-bulb icofont-3x" style="color: #d6702c;"></span>
+      <h4>Serviços de Elétrica</h4>
+      <p>Nossos serviços de elétrica incluem instalações, trocas de fiação e excecução de novas redes elétricas. Saiba todos eles clicando abaixo!</p>
+      
+      <span id="space2"></span>
+      <p id="eletric">- Instalação e troca de tomadas, interruptores, disjuntores, luminárias, lâmpadas, sensor de presença, relé fotocélula, chuveiros, resistências e torneiras elétricas.
+        - Instalação de exaustor de banheiro e ventiladores de teto.
+        - Troca de fiação de chuveiros e instalação de conectores.
+        - Execução de nova rede elétrica para tomadas e ar condicionado.</p>
+      <button onclick="showMoreEletric()" id="btnLer2" class="slide">Saiba mais</button>
+    </div>
+  </div>
+
+
+  <div class="service d-flex align-items-start justify-content-center">
+    <div class="containerService shadow-sm rounded">
+      <span class="icofont-paint-brush icofont-3x" style="color: #d6702c;"></span>
+      <h4>Serviços de Pintura</h4>
+      <p>Nossos serviços de pintura podem ser internos ou externos, e vão deixar o seu ambiente de cara nova. Saiba todos eles clicando abaixo!</p>
+
+      <span id="space3"></span>
+      <p id="paint">- Casas de alvenaria e de madeira.
+        - Apartamentos.
+        - Salas comerciais.
+        - Portas e janelas.
+        - Portões e grades.</p>
+      <button onclick="showMorePaint()" id="btnLer3" class="slide">Saiba mais</button>
+    </div>
+
+    <div class="containerService shadow-sm rounded" style="margin-left: 5%;">
+      <span class="icofont-repair icofont-3x" style="color: #d6702c;"></span>
+      <h4>Alvenaria e Reparos</h4>
+      <p>Nosso serviços de alvenaria e reparos incluem instalações, assentamentos, manutenções e impermeabilizações. Saiba todos eles clicando abaixo!</p>
+      
+      <span id="space4"></span>
+      <p id="repair">- Assentamento de cerâmica e porcelanato. 
+        - Reparo de paredes e pisos de alvenaria. 
+        - Quebra de parede para instalação de rede elétrica e hidráulica. 
+        - Manutenção de telhados, troca de telhas e limpeza de calhas. 
+        - Impermeabilização de lajes e caixas d'água. 
+        - Aplicação de manta asfáltica. 
+        - Instalação de cortinas, quadros decorativos, metais para banheiro, prateleiras e fechaduras. </p>
+      <button onclick="showMoreRepair()" id="btnLer4" class="slide">Saiba mais</button>
+    </div>
+  </div>
+  
+
+    <h3 class="title">Galeria de serviços</h3>
+    <p id="paragrafo">Conheça uma pequena prévia de serviços prestados anteriormente.</p>
+
+    <div class="responsive">
+      <div><img src="../geral/imgs/foto1.png" alt="test"></div>
+      <div><img src="../geral/imgs/foto2.png" alt="teste"></div>
+      <div><img src="../geral/imgs/foto3.png" alt="tt"></div>
+      <div><img src="../geral/imgs/foto4.png" alt="test"></div>
+      <div><img src="../geral/imgs/foto5.png" alt="teste"></div>
+      <div><img src="../geral/imgs/foto6.png" alt="tt"></div>
+      <div><img src="../geral/imgs/foto7.png" alt="test"></div>
+    </div>
+
+    <div class="footer d-flex justify-content-center align-items-center">
+      <div class="col1">
+        <div>
+          <a href="./about.html" class="nav-link" style="margin: 0 !important;">
+            <span class="icofont-safety-hat-light"></span>
+            <span>SOBRE NÓS</span>
+          </a>
+        </div>
+       
+        <div>
+          <a href="./service.html" class="nav-link" style="margin: 0 !important;">
+            <span class="icofont-screw-driver"></span>
+            <span>NOSSOS SERVIÇOS</span>
+          </a>
+        </div>
+      </div>
+  
+      <div class="col2">
+        <span class="icofont-brand-whatsapp"></span>
+        <span>WHATSAPP</span><br>
+        <span>(51) 9528-6842</span>
+      </div>
+  
+      <div class="col3">
+        <div>
+          <span class="icofont-location-pin"></span>
+          <span>PORTO ALEGRE - RS</span>
+        </div>
+        <br>
+        <div>
+          <span class="icofont-clock-time"></span>
+          <span>HORÁRIO DE FUNCIONAMENTO<br>
+          Segunda a sexta das 08h00 às 19h00.<br>
+          Sábado das 08h00 às 12h00.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="whatsapp" id="wppId">
+      <a href="https://api.whatsapp.com/send?phone=555195286842&text=Ol%C3%A1!%20Eu%20gostaria%20de%20agendar%20um%20servi%C3%A7o." id="wppLink">
+        <img src="../geral/imgs/wpp.png" alt="Ícone Whatsapp">
+      </a>
+  
+      <button onclick="closeWpp()" class="btnWpp">
+        <img src="../geral/imgs/close.png" alt="Fechar ícone">
+      </button>
+    </div>
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../geral/js/jquery.min.js"></script>
+<script src="../geral/slick-1.8.1/slick/slick.min.js"></script>
+<script src="../geral/js/script.js"></script>
+</body>
+</html>

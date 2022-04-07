@@ -1,0 +1,339 @@
+@font-face {
+    font-family: "Roboto-L";
+    src: url("../../dafont/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Open S";
+    src: url("../../dafont/OpenSans-Regular.ttf");
+}
+  
+body{
+    background-color: #ffffff;
+    font-family: Open S;
+}
+
+/* navbar */
+
+.navbar{
+    padding: 1.2%;
+    background-color: #275a77 !important;
+}
+
+.nav-link{
+    color: #ffffff !important;
+    margin-left: 6px !important;
+}
+
+a:hover > span{
+    color: #e6dfd7;
+}
+
+.active {
+    color: #e6dfd7 !important;
+}
+
+.navbar-brand{
+    margin-left: 7% !important;
+}
+
+.navbar-nav{
+    margin-left: 40% !important;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: #fff;
+}
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 0 !important;
+}
+
+/* footer */
+
+.footer{
+    padding: 2%;
+    background-color: #275A77;
+    margin-top: 4%;
+    color: #fff;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-top: 8%;
+}
+
+.col1{
+    width: 40%;
+    margin-left: 8%;
+}
+
+.col2{
+    width: 28%
+}
+
+.col3{
+    width: 30%;
+}
+
+
+/* wpp */
+
+.whatsapp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 1% 1% 0;
+    filter: drop-shadow(.125rem .125rem .25rem rgba(0,0,0,.075));
+}
+
+#wppLink{
+    text-decoration: none !important;
+}
+
+.btnWpp{
+    border: none;
+    padding: 0;
+    position: fixed;
+    bottom: 2;
+    right: 0;
+}
+
+
+/* inicial page */
+
+.containerInicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    display: block;
+    width: 40%
+}
+
+.textTitle{
+    color: #275a77;
+    font-family: Roboto-L;
+}
+
+
+/* about page */
+
+.containerAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.textAbout{
+    display: block;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.separator{
+    border-bottom: 5px solid #d6702c;
+    width: 50%;
+    margin: 4% 0 4% 0;
+}
+
+
+/* services page */
+
+.service{
+    margin: 4% 0 4% 0;
+}
+
+.containerService{
+    width: 32%;
+    padding: 3%;
+    background-color: #e6dfd7;
+    text-align: center;
+    color: #275a77;
+}
+
+h4{
+    margin: 3% 0 3% 0;
+}
+
+#hidra, #eletric, #paint, #repair{
+    display: none;
+}
+
+.slide:hover, .slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+button:hover, button:focus {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+.slide {
+    --color: #D6702C;
+    --hover: #D6702C;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    color: var(--color);
+    transition: 0.25s;
+}
+
+.title{
+    color: #275a77;
+    text-align: center;
+    margin: 7% 0 0 0;
+}
+
+#paragrafo{
+    text-align: center;
+    margin: 1% 0 3% 0;
+}
+
+.responsive {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    margin-bottom: 6% !important;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #d6702c !important;
+}
+
+
+/* contact page */
+
+.titleService{
+    color: #275a77;
+    text-align: center;
+    margin: 3% 0 0 0;
+}
+
+.contact{
+    display: flex;
+    margin: 2% 0 5% 0;
+}
+
+.form{
+    width: 30%;
+    margin: auto;
+}
+
+input, textarea{
+    margin: 3% 0 3% 0;
+    width: 80%;
+    padding: 3px;
+}
+
+.textContact{
+    width: 40%;
+    margin-top: 2%;
+}
+
+.info{
+    line-height: 0.9;
+    margin-left: 8px;
+    /* color: #275a77; */
+    letter-spacing: 1px;
+}
+
+.infoContainer{
+    margin-top: 6%;
+}
+
+
+/* !! responsividade !! */
+
+/* about page */
+
+@media screen and (max-width: 842px) {
+    .containerAbout{
+        display: block;
+        margin: 12% auto auto auto;
+        width: 50%;
+    }
+    
+    .textAbout{
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .separator{
+        margin: 5% 0 5% 0;
+    }
+}
+
+
+/* service page */
+
+@media screen and (max-width: 970px) {
+    .service{
+        margin: 8% 0 8% 0;
+    }
+
+    .containerService{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 738px){
+    .service{
+        margin: 10% 0 10% 0;
+        display: block !important;
+    }
+
+    .containerService{
+        width: 80%;
+        margin: 10% auto 10% auto !important;
+        padding: 6%;
+    }
+}
+
+
+/* contact page */
+
+@media screen and (max-width: 799px){
+    .titleService{
+        margin: 6% 0 0 0;
+    }
+
+    .contact{
+        display: block;
+        margin: 5% 0 5% 0;
+    }
+
+    .form{
+        width: 60%;
+    }
+
+    input, textarea{
+        margin: 3% 0 3% 0;
+        width: 100%;
+        padding: 6px;
+    }
+
+    .textContact{
+        margin: auto;
+        width: 50%;
+        margin-top: 5%;
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 628px){
+    .textContact{
+        margin: auto;
+        width: 70%;
+        margin-top: 5%;
+    }
+}
