@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Roboto-L";
-    src: url("../../dafont/Roboto-Light.ttf");
+    src: url("./geral/dafont/Roboto-Light.ttf");
 }
 
 @font-face {
     font-family: "Open S";
-    src: url("../../dafont/OpenSans-Regular.ttf");
+    src: url("./geral/dafont/OpenSans-Regular.ttf");
 }
   
 body{
