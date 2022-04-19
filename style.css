@@ -38,7 +38,7 @@ a:hover > span{
 }
 
 .navbar-brand{
-    margin-left: 7% !important;
+    margin-left: 8% !important;
 }
 
 .navbar-nav{
@@ -48,7 +48,7 @@ a:hover > span{
 }
 
 .navbar-light .navbar-toggler {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 
 .navbar-toggler:focus{
@@ -143,6 +143,11 @@ a:hover > span{
     margin-left: 2%;
 }
 
+.aboutTitle{
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
 .separator{
     border-bottom: 5px solid #d6702c;
     width: 50%;
@@ -159,7 +164,7 @@ a:hover > span{
 .containerService{
     width: 32%;
     padding: 3%;
-    background-color: #e6dfd7;
+    background-color: rgba(0, 0, 0, 0.05);
     text-align: center;
     color: #275a77;
 }
@@ -203,6 +208,10 @@ button {
     margin: 7% 0 0 0;
 }
 
+.titleService{
+    font-size: 1.4rem;
+}
+
 #paragrafo{
     text-align: center;
     margin: 1% 0 3% 0;
@@ -240,8 +249,29 @@ button {
 input, textarea{
     margin: 3% 0 3% 0;
     width: 80%;
-    padding: 3px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.05);
+    color: #000;
+    font-size: 16px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+textarea{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 80px;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background: rgba(0, 0, 0, 0.082);
+} 
 
 .textContact{
     width: 40%;
@@ -257,6 +287,10 @@ input, textarea{
 
 .infoContainer{
     margin-top: 6%;
+}
+
+#phone{
+    margin-bottom: 1.5% !important;
 }
 
 
@@ -380,6 +414,14 @@ input, textarea{
         margin: 3% 0 3% 0;
         width: 100%;
         padding: 6px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    textarea{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 80px;
     }
 
     .textContact{
@@ -388,7 +430,6 @@ input, textarea{
         margin-top: 5%;
         padding: 10px;
     }
-    
 }
 
 @media screen and (max-width: 628px){
@@ -410,7 +451,10 @@ input, textarea{
         width: 80%;
         margin-top: 5%;
     }
-    
+
+    .form{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 356px){
