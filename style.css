@@ -333,6 +333,27 @@ textarea:focus, input:focus, select:focus {
     }
 }
 
+/* inicial page */
+
+@media screen and (max-width: 843px) {
+    .containerInicial{
+        display: block;
+        text-align: center;
+        margin: 5% auto;
+    }
+
+    .imgInicial{
+        display: none;
+    }
+
+    .text{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
 /* about page */
 
 @media screen and (max-width: 842px) {
